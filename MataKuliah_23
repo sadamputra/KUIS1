@@ -1,0 +1,42 @@
+package MATAKULIAH;
+public class MataKuliah_23 {
+
+    String kodeMK;
+    String namaMK;
+    private int sks;
+
+    public MataKuliah_23(String kodeMK, String namaMK, int sks) {
+        this.kodeMK = kodeMK;
+        this.namaMK = namaMK;
+        this.setSks(sks);
+    }
+
+    public int getSks() {
+        return sks;
+        
+    }
+
+    public void setSks(int sks) {
+        this.sks = sks;
+        
+    }
+
+    public void tampilkanInfo() {
+        System.out.println("Kode MK : " + kodeMK);
+        System.out.println("Nama MK : " + namaMK);
+        System.out.println("SKS     : " + getSks());
+        System.out.println("-----------------------");
+    }
+
+    public void ubahNamaMK(String namaMKBaru) {
+        this.namaMK = namaMKBaru;
+    }
+
+    public void ubahSKS(int sksBaru) {
+        if (sksBaru >= 2) {
+            this.setSks(sksBaru);
+        } else {
+            System.out.println("SKS tidak boleh kurang dari 2!");
+        }
+    }
+}
