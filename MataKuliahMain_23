@@ -1,0 +1,17 @@
+package MATAKULIAH;
+public class MataKuliahMain_23 {
+    public static void main(String[] args) {
+
+        MataKuliah_23 mk1 = new MataKuliah_23("IF101", "Algoritma", 3);
+
+        mk1.tampilkanInfo();
+
+        System.out.println("Mengubah nama dan SKS...");
+        mk1.ubahNamaMK("Algoritma dan Struktur Data");
+        mk1.ubahSKS(4);
+
+        mk1.tampilkanInfo();
+
+        mk1.ubahSKS(1);
+    }
+}
