@@ -1,0 +1,20 @@
+package MAHASISWA;
+
+import MATAKULIAH.MataKuliah_23;
+
+public class MahasiswaMain_23 {
+    public static void main(String[] args) {
+
+        MataKuliah_23 mk1 = new MataKuliah_23("IF101", "Algoritma", 3);
+        MataKuliah_23 mk2 = new MataKuliah_23("IF102", "Basis Data", 3);
+        MataKuliah_23 mk3 = new MataKuliah_23("IF103", "Pemrograman Java", 4);
+
+        Mahasiswa_23 mhs = new Mahasiswa_23("244107060130", "Sadam Putra", 2024, 5);
+
+        mhs.tambahMataKuliah(mk1);
+        mhs.tambahMataKuliah(mk2);
+        mhs.tambahMataKuliah(mk3);
+
+        mhs.tampilkanInfo();
+    }
+}
